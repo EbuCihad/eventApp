@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".filreActivity">
+
+    <RadioGroup
+        android:id="@+id/radioGroupButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RadioButton
+            android:id="@+id/festivalId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:text="festival" />
+
+        <RadioButton
+            android:id="@+id/egitimId"
+            android:text="egitim"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RadioButton
+            android:id="@+id/seyahatId"
+            android:text="seyahat"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RadioButton
+            android:id="@+id/sinemaId"
+            android:text="sinema"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RadioButton
+            android:id="@+id/sahneId"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="sahne"
+            />
+
+
+        <RadioButton
+            android:id="@+id/sporId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:text="spor" />
+
+        <RadioButton
+            android:id="@+id/konserId"
+            android:layout_width="191dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:text="konser" />
+
+        <RadioButton
+            android:id="@+id/hicbiri"
+            android:text="null"
+            android:layout_width="191dp"
+            android:textSize="20dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/filtrele"
+            android:layout_width="183dp"
+            android:layout_height="77dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center"
+            android:text="Filtrele" />
+
+
+    </RadioGroup>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="183dp"
+            android:layout_height="210dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

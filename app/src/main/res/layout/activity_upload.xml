@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".uploadActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <EditText
+        android:id="@+id/baslik"
+        android:layout_width="384dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="Başlık Gir"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/seciliFoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/seciliFoto"
+        android:layout_width="800px"
+        android:layout_height="149dp"
+        android:onClick="fotoSec"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/baslik"
+        app:srcCompat="@drawable/fotosec" />
+
+    <EditText
+        android:id="@+id/aciklama"
+        android:layout_width="384dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Açıklama Gir"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seciliFoto" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:onClick="postOlustur"
+        android:text="OLUŞTUR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/biletFiyat" />
+
+    <EditText
+        android:id="@+id/saat"
+        android:layout_width="384dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Saat Gir"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tarih" />
+
+    <EditText
+        android:id="@+id/kategori"
+        android:layout_width="384dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Kategori Gir"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saat" />
+
+    <EditText
+        android:id="@+id/tarih"
+        android:layout_width="384dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Tarih Gir"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aciklama" />
+
+    <EditText
+        android:id="@+id/biletFiyat"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:ems="10"
+        android:hint="Bilet Fiyatını Giriniz"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kategori" />
+
+</android.support.constraint.ConstraintLayout>

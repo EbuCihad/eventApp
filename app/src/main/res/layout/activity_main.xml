@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="78dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="ebucihadinan@hotmail.com.tr" />
+
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="171dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="123456789" />
+
+    <Button
+        android:id="@+id/giris"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/emailText"
+        android:layout_alignBottom="@+id/passwordText"
+        android:layout_marginBottom="204px"
+        android:onClick="giris"
+        android:text="GİRİŞ" />
+
+    <Button
+        android:id="@+id/kayitOl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/emailText"
+        android:layout_alignTop="@+id/giris"
+        android:onClick="kayit"
+        android:layout_marginBottom="204px"
+
+        android:layout_alignBottom="@+id/passwordText"
+        android:text="KAYIT OL" />
+</RelativeLayout>
